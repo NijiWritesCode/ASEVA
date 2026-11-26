@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-obsidian: 11 12 14;
+    --color-gold: 212 175 55;
+    --color-sand: 251 249 245;
+  }
+
+  body {
+    @apply bg-sand-100 text-obsidian-900 font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, .font-editorial {
+    @apply font-serif tracking-tight text-obsidian-950;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f0e8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d5ccbc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
